@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/fontawesome.min.css">
+    <link rel="stylesheet" href="./CSS/styles.css">
+</head>
+<body>
+    <div id="header">
+       <div class="container">
+            <nav>
+                <div class="logo">
+                    <h1><span>O</span>MAR.</h1>
+                </div>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Angular Frontend Developer</p>
+                <h1>Hi,I'm <span>Omar</span><br>Samy From Egypt</h1>
+            </div>
+       </div>
+    </div>
+    <!-----------about---------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="./images/about.jpg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>
+                        Motivated Computer Engineering student skilled in building responsive, user-friendly 
+                        websites using HTML, CSS, Bootstrap, JavaScript, and Angular. Detail-oriented with a 
+                        collaborative mindset, committed to delivering high-quality projects that meet user and 
+                        client expectations. Seeking a role to further develop and apply my frontend development 
+                        skills. 
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills', event)">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience', event)">Experience</p>
+                        <p class="tab-links" onclick="opentab('education', event)">Education</p>
+                    </div>
+                    
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Frontend Development</span><br> Building responsive and user-friendly websites using HTML, CSS, JavaScript, Angular, Bootstrap </li>
+                            <li><span>Other Web Development Languages</span><br> C++, Java</li>
+                            <li><span>Problem-Solving</span><br> Data Structures and Algorithms, Object Oriented Programming</li>
+                            <li><span>Design & Development</span><br> Responsive Web Design, UI/UX Principles</li>
+                            <li><span>Version Control</span><br> Git, GitHub</li>
+                            <li><span>Soft Skills</span><br> Teamwork, Leadership, Project Management</li>
+                            <li><span>Languages</span><br> Arabic: native <br> English: very good</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>(Oct 2023 – present)</span><br>IEEE Member </li>
+                            <li><span>(Apr 2024 – Oct 2024)</span><br>Six-month intensive course covering advanced frontend development techniques in 
+                                Angular. </li>
+                            <li><span>Web Development Workshop</span><br>Two-month course in modern web development practices and responsive design</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Expected Graduation (June 2026) </span><br>Bachelor of Engineering in Computer Engineering 
+                                <br>Shoubra, Benha University</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- -----------Services--------------- -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Development</h2>
+                    <p> <ul>
+                            <li>Designing and coding responsive websites using HTML, CSS, and JavaScript. </li>
+                            <li>Implementing website layouts based on wireframes or mockups. </li>
+                            <li>Ensuring cross-browser and cross-device compatibility.</li>
+                        </ul> 
+                    </p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2>Responsive Design</h2>
+                    <p> <ul>
+                            <li>Ensuring websites are mobile-friendly using frameworks like Bootstrap, Tailwind CSS, or custom CSS media queries.</li>
+                            <li>Testing and optimizing layouts for various screen sizes and resolutions.</li>
+                        </ul> 
+                     </p>
+                </div>
+                <!-- <div>
+                    <h2>Website Maintenance and Updates</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum deserunt possimus ratione architecto, at quae! Illum qui, fuga assumenda eaque fugit pariatur animi nihil unde laboriosam accusantium tempore optio esse!</p>
+                    <a href="#">learn more</a>
+                </div> -->
+                <div>
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <h2>SEO-Friendly Web Development</h2>
+                    <p> <ul>
+                            <li>Writing clean and semantic HTML for better search engine crawling.</li>
+                            <li>Implementing technical SEO practices, such as: Optimizing meta tags and headings and Ensuring fast load times</li>
+                        </ul> 
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ---------portfolio------ -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="./images/work1.png" alt="">
+                    <div class="layer">
+                        <h3>Responsive Web Experiences</h3>
+                        <p>Building modern, responsive websites for a seamless experience on any device.</p>
+                        <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./images/work2.png" alt="">
+                    <div class="layer">
+                        <h3>Outlook-Inspired Email UI</h3>
+                        <p>A responsive email interface designed to resemble Microsoft Outlook, built using HTML, CSS, JavaScript, and Bootstrap.</p>
+                        <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./images/work3.png" alt="">
+                    <div class="layer">
+                        <h3>Travel Blog Website</h3>
+                        <p>A fully responsive travel blog website showcasing destinations, tips, and experiences, designed for an engaging user experience.</p>
+                        <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    
+    <!-- ----------contact----------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i> omar413298@feng.bu.edu.eg</p>
+                    <p><i class="fa-solid fa-square-phone"></i> +20 1140414771</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/omar.samy72/"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/omar_samy72/"><i class="fa-brands fa-square-x-twitter"></i></a>
+                        <a href="https://x.com/omar_samy72"><i class="fa-brands fa-square-instagram"></i></a>
+                        <a href="linkedin.com/in/0mar-sami"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="images/Omar Samy Mohamed cv.pdf" download class="btn">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea> <br>
+                        <button type="submit" class="btn">Send</button>
+                    </form>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright &copy; Omar</p>
+        </div>
+        
+    </div>
+    <button class="scroll-to-top" id="scrollToTopBtn">&#8593;</button>
+    <script src="./JS/script.js"></script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbytV7m3zLhlfuvc5ydX98clOeBX3Kk2lc71-nzzCpkHD-OQb3jnD_hCKWAlhN1_wEdk/exec'
+        const form = document.forms['submit-to-google-sheet']
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => console.log('Success!', response))
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+    
+</body>
+</html>
