@@ -421,13 +421,14 @@ nav .fa-solid{
         margin-right: 20px;
     }
     .work{
-        width: 90%;
+        width: 140%;
     }
     .work-list{
         display: flex;
         flex-direction: column;
         width: 70%;
     }
+    
     .contact-left, .contact-right{
         flex-basis: 100%;
     }
@@ -510,6 +511,7 @@ nav .fa-solid{
         flex-direction: column;
         width: 70%;
     }
+    
     .contact-left, .contact-right{
         flex-basis: 100%;
     }
@@ -577,8 +579,9 @@ nav .fa-solid{
         margin-right: 20px;
     }
     .work{
-        width: 90%;
+        width: 140%;
     }
+  
     .contact-left, .contact-right{
         flex-basis: 100%;
     }
