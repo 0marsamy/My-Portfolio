@@ -343,7 +343,7 @@ nav .fa-solid{
 @media only screen and (max-width: 1280px) {
     #header{
         background-image: url(../images/hero2.png);
-        background-size: 40% 90%;
+        background-size: 80% 90%;
         background-repeat: no-repeat;
         background-position: center right;
         height: 700px;
@@ -435,14 +435,14 @@ nav .fa-solid{
 @media only screen and (max-width: 830px) {
     #header{
         background-image: url(../images/hero2.png);
-        background-size: 70% 90%;
+        background-size: 80% 90%;
         background-repeat: no-repeat;
         background-position: center right;
         height: 700px;
       
     }
     .header-text{
-        margin-top: 50%;
+        margin-top: 70%;
         font-size: 16px;
     }
     .header-text h1{
