@@ -220,7 +220,7 @@ nav ul li a:hover::after{
 }
 .layer h3{
     font-weight: 500;
-    margin-bottom: 20px;
+    margin-bottom: 5px;
 }
 .layer a{
     margin-top: 20px;
@@ -581,7 +581,12 @@ nav .fa-solid{
     .work{
         width: 140%;
     }
-  
+    .layer h3{
+        margin-top: 15px;
+    }
+    .layer a{
+        margin-bottom: 20px;
+    }
     .contact-left, .contact-right{
         flex-basis: 100%;
     }
