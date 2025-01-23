@@ -47,3 +47,12 @@ scrollToTopBtn.onclick = function () {
     behavior: 'smooth'
   });
 };
+document.querySelector('form[name="submit-to-google-sheet"]').addEventListener('submit', function (event) {
+  event.preventDefault(); // Prevent default form submission behavior
+
+  // Optionally, handle form data here (e.g., send data to an API or Google Sheet)
+  console.log("Form submitted");
+
+  // Refresh the page after submission
+  location.reload();
+});

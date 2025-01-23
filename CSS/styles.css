@@ -305,6 +305,8 @@ form .btn{
     margin-top: 20px;
     cursor: pointer;
 }
+
+
 textarea {
     resize: none; /* Disable resizing */
     width: 100%; /* Set width */
